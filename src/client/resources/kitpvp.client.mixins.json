@@ -3,7 +3,8 @@
 	"package": "net.wobba.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"ExampleClientMixin"
+		"ExampleClientMixin",
+		"PreventItemDropMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

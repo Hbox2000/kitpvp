@@ -3,7 +3,8 @@
 	"package": "net.wobba.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"PreventInventoryDropMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,2 +1,17 @@
 /give @a kitpvp:summon_fireball
 /summon minecraft:small_fireball
+/gamemode survival
+/give @a kitpvp:summon_fireball
+/clear
+/give Player855 kitpvp:summon_fireball
+/give @a kitpvp:summon_fireball
+/gamemode creative
+/gamemode survival
+/give @a kitpvp:summon_fireball
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/time set day
