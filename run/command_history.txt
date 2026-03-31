@@ -1,0 +1,2 @@
+/give @a kitpvp:summon_fireball
+/summon minecraft:small_fireball

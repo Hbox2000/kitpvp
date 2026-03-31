@@ -2,6 +2,8 @@ package net.wobba;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.wobba.item.ModCreativeModeTabs;
+import net.wobba.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +20,8 @@ public class Kitpvp implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+		ModItems.initialize();
+		ModCreativeModeTabs.initialize();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
