@@ -22,6 +22,8 @@ public class Kitpvp implements ModInitializer {
 		// Proceed with mild caution.
 		ModItems.initialize();
 		ModCreativeModeTabs.initialize();
+		ModMenuTypes.initialize();
+		ModCommands.initialize();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
