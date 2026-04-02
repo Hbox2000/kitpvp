@@ -30,7 +30,9 @@ bin/
 
 # fabric
 
-# run/
+logs/
+saves/
+debug/
 
 # java
 
