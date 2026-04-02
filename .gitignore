@@ -33,6 +33,7 @@ bin/
 logs/
 saves/
 debug/
+run/config/fabric/indigo-renderer.properties
 
 # java
 
