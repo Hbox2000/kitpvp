@@ -34,6 +34,9 @@ logs/
 saves/
 debug/
 run/config/fabric/indigo-renderer.properties
+run/options.txt
+run/servers.dat
+run/servers.dat_old
 
 # java
 
