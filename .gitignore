@@ -37,6 +37,11 @@ run/config/fabric/indigo-renderer.properties
 run/options.txt
 run/servers.dat
 run/servers.dat_old
+run/crash-reports/
+run/KitPVPServer/playerdata/
+run/usercache.json
+run/KitPVPServer/stats/
+run/KitPVPServer/advancements/
 
 # java
 
