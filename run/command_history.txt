@@ -1,9 +1,3 @@
-/clear
-/give Player855 kitpvp:summon_fireball
-/give @a kitpvp:summon_fireball
-/gamemode creative
-/gamemode survival
-/give @a kitpvp:summon_fireball
 /gamemode creative
 /gamemode survival
 /gamemode creative
@@ -48,3 +42,9 @@
 /give @a kitpvp:summon_fireball
 /clearclass
 /class
+/clearclass
+/class
+/give @a kitpvp:summon_fireball
+/class
+/time set day
+/clearclass

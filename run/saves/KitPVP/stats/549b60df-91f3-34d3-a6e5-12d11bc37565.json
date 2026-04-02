@@ -1,0 +1,22 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:oak_log": 29,
+      "kitpvp:summon_fireball": 4
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1774,
+      "minecraft:walk_one_cm": 665,
+      "minecraft:total_world_time": 2459,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 1774,
+      "minecraft:time_since_death": 1774,
+      "minecraft:drop": 4
+    },
+    "minecraft:picked_up": {
+      "minecraft:oak_log": 29,
+      "kitpvp:summon_fireball": 6
+    }
+  },
+  "DataVersion": 4671
+}

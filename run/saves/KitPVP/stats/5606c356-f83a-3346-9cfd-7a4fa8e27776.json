@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "kitpvp:summon_fireball": 3
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 602,
+      "minecraft:time_since_rest": 383,
+      "minecraft:walk_one_cm": 543,
+      "minecraft:total_world_time": 396,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 383,
+      "minecraft:time_since_death": 383,
+      "minecraft:drop": 3
+    },
+    "minecraft:dropped": {
+      "kitpvp:summon_fireball": 3
+    }
+  },
+  "DataVersion": 4671
+}
