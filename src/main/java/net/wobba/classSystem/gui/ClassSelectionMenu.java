@@ -43,7 +43,7 @@ public class ClassSelectionMenu extends AbstractContainerMenu {
             serverPlayer.closeContainer();
             serverPlayer.level().getServer().execute(() ->
                     serverPlayer.openMenu(new SimpleMenuProvider(
-                            (syncId, inv, p) -> new ClassPreviewMenu(syncId, selected),
+                            (syncId, inv, p) -> new ClassPreviewMenu(syncId, selected, selected.getItems(serverPlayer)),
                             Component.literal(selected.getName())
                     ))
             );

@@ -5,6 +5,7 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.SimpleMenuProvider;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ClickType;
@@ -23,7 +24,12 @@ public class ClassPreviewMenu extends AbstractContainerMenu {
     private static final int BACK_SLOT = 0;   // slot 1
     private static final int CONFIRM_SLOT = 8; // slot 9
 
-    public ClassPreviewMenu(int syncId, KitClass kitClass) {
+    // Client-side constructor - called automatically by Fabric's menu factory
+    public ClassPreviewMenu(int syncId, Inventory inv) {
+        this(syncId, null, List.of());
+    }
+
+    public ClassPreviewMenu(int syncId, KitClass kitClass, List<ItemStack> displayItems) {
         super(ModMenuTypes.CLASS_PREVIEW, syncId);
         this.kitClass = kitClass;
 
@@ -40,7 +46,6 @@ public class ClassPreviewMenu extends AbstractContainerMenu {
         }
 
         ItemStack[] armor = kitClass.getArmor();
-        List<ItemStack> displayItems = kitClass.getDisplayItems();
 
         // Slot 1 - Back button
         ItemStack back = new ItemStack(Items.RED_WOOL);

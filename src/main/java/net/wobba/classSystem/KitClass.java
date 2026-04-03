@@ -1,20 +1,23 @@
 package net.wobba.classSystem;
 
+import net.minecraft.core.Holder;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.enchantment.Enchantment;
 
 import java.util.List;
 
 public abstract class KitClass {
 
     public abstract String getName();
-    public abstract List<ItemStack> getDisplayItems(); // items shown in preview
-    public abstract ItemStack getIcon(); // the item shown in the GUI
+    public abstract List<ItemStack> getItems(ServerPlayer player); // items shown in preview
+    public abstract ItemStack getIcon(); // the item shown in the GUI and added to the hotbar
     public abstract ItemStack[] getArmor();      // helmet, chestplate, leggings, boots
     public abstract ItemStack getOffhand();
-    public abstract ItemStack[] getItems();      // items to put in hotbar
     public abstract void applyStats(Player player); // speed, health etc
 
     // Called when player receives the class
@@ -34,12 +37,23 @@ public abstract class KitClass {
         player.setItemSlot(EquipmentSlot.OFFHAND, offhand);
 
         // Apply items
-        ItemStack[] items = getItems();
-        for (int i = 0; i < items.length; i++) {
-            player.getInventory().setItem(i, items[i]);
+        List<ItemStack> items = getItems(player);
+        for (int i = 0; i < items.size(); i++) {
+            player.getInventory().setItem(i, items.get(i));
         }
 
         // Apply stats
         applyStats(player);
+    }
+
+    // Class to enchant an item OH MY FUCKING GOD THIS WAS SO BAD TO FIGURE OUT
+    public static ItemStack enchantItem(ItemStack item, ResourceKey<Enchantment> enchantment, int level, ServerPlayer player)
+    {
+        Holder<Enchantment> holder = player.level().registryAccess()
+                .lookupOrThrow(Registries.ENCHANTMENT)
+                .getOrThrow(enchantment);
+        item.enchant(holder, level);
+
+        return item;
     }
 }

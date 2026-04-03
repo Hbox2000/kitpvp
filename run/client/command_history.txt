@@ -1,12 +1,3 @@
-/give @a kitpvp:pact_boon
-/clear @a kitpvp:pact_boon
-/clear
-/give @a kitpvp:eldritch_blast
-/give @a kitpvp:pact_boon
-/difficulty peaceful
-/give @a kitpvp:summon_lesser_demon
-/gamemode creative
-/gamemode survival
 /give @a kitpvp:summon_lesser_demon
 /clear
 /give @a kitpvp:summon_lesser_demon
@@ -48,3 +39,12 @@
 /kill @a
 /clearclass
 /class
+/difficulty peaceful
+/gamerule spawn_mobs false
+/difficulty normal
+/class
+/clearclass
+/class
+/clearclass
+/class
+/clearclass
