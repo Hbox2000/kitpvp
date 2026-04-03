@@ -1,6 +1,50 @@
+/give @a kitpvp:pact_boon
+/clear @a kitpvp:pact_boon
 /clear
+/give @a kitpvp:eldritch_blast
+/give @a kitpvp:pact_boon
+/difficulty peaceful
+/give @a kitpvp:summon_lesser_demon
+/gamemode creative
 /gamemode survival
-/class
+/give @a kitpvp:summon_lesser_demon
+/clear
+/give @a kitpvp:summon_lesser_demon
+/gamerule spawn_mobs false
+/difficulty normal
+/kill @e[type=!minecraft:player]
+/gamemode survival
+/summon minecraft:zombie
+/kill @e[type=!minecraft:player]
+/summon minecraft:zombie ~ ~ ~ {NoAI:1b}
+/summon minecraft:zombie ~ ~ ~ {Owner:Player680}
+/summon minecraft:zombie ~ ~ ~ {NoAI:1b}
+/summon minecraft:wither_skeleton ~ ~ ~ {Owner:Player680}
+/summon pig
+/summon minecraft:wither_skeleton ~ ~ ~ {NoAI:1b}
+/give @a kitpvp:power_word_kill
+/give @a kitpvp:eldritch_blast
+/give @a kitpvp:pact_boon
+/give @a kitpvp:test_sword
+/gamemode survival
+/summon minecraft:wither_skeleton ~ ~ ~ {NoAI:1b}
+/gamerule mob_griefing false
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/clear @a coal
+/summon minecraft:villager
+/summon minecraft:turtle
+/give @a kitpvp:test_sword
+/summon minecraft:wither_skeleton ~ ~ ~ {NoAI:1b}
+/attribute Player790 minecraft:scale base get
+/attribute Player790 minecraft:scale base set 0.1
+/summon minecraft:wither_skeleton ~ ~ ~ {NoAI:1b}\
+/summon minecraft:wither_skeleton ~ ~ ~ {NoAI:1b}
 /clearclass
-/gamemode survival
+/class
+/kill @a
+/clearclass
 /class

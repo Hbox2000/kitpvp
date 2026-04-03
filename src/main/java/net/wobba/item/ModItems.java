@@ -1,14 +1,21 @@
 package net.wobba.item;
 
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.FoodOnAStickItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ToolMaterial;
 import net.wobba.Kitpvp;
-import net.wobba.item.custom.SummonFireball;
+import net.wobba.classSystem.abilityItems.warlock.EldritchBlast;
+import net.wobba.classSystem.abilityItems.warlock.PowerWordKill;
+import net.wobba.classSystem.abilityItems.warlock.SummonLesserDemon;
+import net.wobba.classSystem.abilityItems.warlock.PactBoon;
+import net.wobba.classSystem.abilityItems.test.TestPassive;
+import net.wobba.classSystem.abilityItems.test.SummonFireball;
+import org.w3c.dom.ranges.Range;
 
 import java.util.function.Function;
 
@@ -28,5 +35,12 @@ public class ModItems {
         return item;
     }
 
-    public static final Item SUMMON_FIREBALL = register("summon_fireball", SummonFireball::new, new Item.Properties().useCooldown(2));
+    public static final Item SUMMON_FIREBALL = register("summon_fireball", SummonFireball::new, new Item.Properties());
+    public static final Item REGEN_PASSIVE = register("regen_passive", TestPassive::new, new Item.Properties());
+    public static final Item PACT_BOON = register("pact_boon", PactBoon::new, new Item.Properties());
+    public static final Item ELDRITCH_BLAST = register("eldritch_blast", EldritchBlast::new, new Item.Properties());
+    public static final Item SUMMON_LESSER_DEMON = register("summon_lesser_demon", SummonLesserDemon::new, new Item.Properties());
+    public static final Item POWER_WORD_KILL = register("power_word_kill", PowerWordKill::new, new Item.Properties());
+
+    public static final Item TEST_SWORD = register("test_sword", Item::new, new Item.Properties().sword(ToolMaterial.DIAMOND, 1f, -3f));
 }

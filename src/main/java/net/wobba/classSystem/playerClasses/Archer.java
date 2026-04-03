@@ -24,10 +24,11 @@ public class Archer extends KitClass {
         List<ItemStack> items = new ArrayList<>();
 
         // Add items with tooltips as ability descriptions
-        ItemStack bow = new ItemStack(Items.BOW);
-        items.add(bow);
+        items.add(new ItemStack(Items.BOW));
 
         items.add(new ItemStack(Items.ARROW, 64));
+
+        items.add(new ItemStack(Items.AMETHYST_SHARD, 32));
         return items;
     }
 
