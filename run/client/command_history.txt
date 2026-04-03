@@ -1,0 +1,6 @@
+/clear
+/gamemode survival
+/class
+/clearclass
+/gamemode survival
+/class

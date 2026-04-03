@@ -174,7 +174,7 @@
     "nextUpdateNag": 0,
     "shownIntroduction": true,
     "showOpenConfigTip": true,
-    "showOpenContextMenuTip": true,
+    "showOpenContextMenuTip": false,
     "showOpenEditorTip": true,
     "completedTutorials": [],
     "openEditorWindowTypes": [
