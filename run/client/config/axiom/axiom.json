@@ -175,7 +175,7 @@
     "shownIntroduction": true,
     "showOpenConfigTip": true,
     "showOpenContextMenuTip": false,
-    "showOpenEditorTip": true,
+    "showOpenEditorTip": false,
     "completedTutorials": [],
     "openEditorWindowTypes": [
       "tools",
@@ -196,7 +196,7 @@
     "showToolMaskOpenWarning": true,
     "showNon90DegreeRotationWarning": true,
     "showQuickReplaceCtrlClickTip": true,
-    "dockedInventoryWithPalette": false,
+    "dockedInventoryWithPalette": true,
     "rootEditorPalette": {
       "blocks": [],
       "subcategories": {}

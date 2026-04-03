@@ -6,7 +6,9 @@
 		"ExampleMixin",
 		"PreventInventoryDropMixin",
 		"PlayerRespawnMixin",
-		"MenuClickMixin"
+		"MenuClickMixin",
+		"PassiveAbilityMixin",
+		"InventoryChangeMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
