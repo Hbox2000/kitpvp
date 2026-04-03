@@ -5,6 +5,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.player.Player;
 import net.wobba.classSystem.playerClasses.Archer;
+import net.wobba.classSystem.playerClasses.Cowboy;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -50,6 +51,7 @@ public class ClassManager {
 
     static {
         register(new Archer());
+        register(new Cowboy());
         // register more classes here
     }
 
