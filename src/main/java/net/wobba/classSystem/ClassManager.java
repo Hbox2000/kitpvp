@@ -12,6 +12,12 @@ import java.util.UUID;
 
 public class ClassManager {
 
+    // Register all classes here.
+    static {
+        // e.g. register(new TemplateClass());
+        register(new Archer());
+    }
+
     // Temporary storage for preview data
     private static final Map<UUID, KitClass> PREVIEW_CLASSES = new HashMap<>();
 
@@ -47,11 +53,6 @@ public class ClassManager {
 
     // Player -> their current class
     private static final Map<UUID, KitClass> PLAYER_CLASSES = new HashMap<>();
-
-    static {
-        register(new Archer());
-        // register more classes here
-    }
 
     public static void register(KitClass kitClass) {
         CLASSES.put(kitClass.getName().toLowerCase(), kitClass);

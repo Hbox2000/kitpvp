@@ -25,9 +25,6 @@ public class Archer extends KitClass {
     @Override
     public List<ItemStack> getItems(ServerPlayer player) {
         List<ItemStack> items = new ArrayList<>();
-
-
-        // Add items with tooltips as ability descriptions
         items.add(new ItemStack(Items.BOW));
         items.add(new ItemStack(Items.ARROW, 64));
         ItemStack stack = new ItemStack(Items.CROSSBOW);
