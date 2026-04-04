@@ -43,9 +43,4 @@ public class PactBoon extends PassiveAbilityItem {
 
         player.getCooldowns().addCooldown(new ItemStack(this), 100);
     }
-
-    @Override
-    public void onTick(ServerPlayer player) {
-        System.out.println("Equipped");
-    }
 }

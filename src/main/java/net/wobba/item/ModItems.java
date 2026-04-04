@@ -2,10 +2,12 @@ package net.wobba.item;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponentType;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.util.Unit;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ToolMaterial;
 import net.wobba.Kitpvp;
@@ -35,12 +37,14 @@ public class ModItems {
         return item;
     }
 
+    // Test abilities
     public static final Item SUMMON_FIREBALL = register("summon_fireball", SummonFireball::new, new Item.Properties());
     public static final Item REGEN_PASSIVE = register("regen_passive", TestPassive::new, new Item.Properties());
+
+    // Warlock items
     public static final Item PACT_BOON = register("pact_boon", PactBoon::new, new Item.Properties());
     public static final Item ELDRITCH_BLAST = register("eldritch_blast", EldritchBlast::new, new Item.Properties());
     public static final Item SUMMON_LESSER_DEMON = register("summon_lesser_demon", SummonLesserDemon::new, new Item.Properties());
     public static final Item POWER_WORD_KILL = register("power_word_kill", PowerWordKill::new, new Item.Properties());
-
-    public static final Item TEST_SWORD = register("test_sword", Item::new, new Item.Properties().sword(ToolMaterial.DIAMOND, 1f, -3f));
+    public static final Item RITUAL_DAGGER = register("ritual_dagger", Item::new, new Item.Properties().sword(ToolMaterial.DIAMOND, 1f, -3f).component(DataComponents.UNBREAKABLE, Unit.INSTANCE));
 }

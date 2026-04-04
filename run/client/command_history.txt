@@ -1,12 +1,3 @@
-/summon minecraft:wither_skeleton ~ ~ ~ {NoAI:1b}
-/gamerule mob_griefing false
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/clear @a coal
-/summon minecraft:villager
 /summon minecraft:turtle
 /give @a kitpvp:test_sword
 /summon minecraft:wither_skeleton ~ ~ ~ {NoAI:1b}
@@ -48,3 +39,12 @@
 /give @a kitpvp:regen_passive
 /give @a kitpvp:summon_fireball
 /clear
+/give @a kitpvp:ritual_dagger
+/summon minecraft:wither_skeleton ~ ~ ~ {NoAI:1b}
+/clear
+/class
+/gamemode creative
+/gamemode survival
+/clearclass
+/class
+/kill

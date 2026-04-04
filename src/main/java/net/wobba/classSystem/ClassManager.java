@@ -8,6 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.wobba.classSystem.abilityItems.PassiveAbilityItem;
 import net.wobba.classSystem.abilityItems.warlock.PactBoon;
 import net.wobba.classSystem.playerClasses.Archer;
+import net.wobba.classSystem.playerClasses.Warlock;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -65,6 +66,7 @@ public class ClassManager {
     static {
         // e.g. register(new TemplateClass());
         register(new Archer());
+        register(new Warlock());
     }
 
     public static KitClass getClass(Player player) {

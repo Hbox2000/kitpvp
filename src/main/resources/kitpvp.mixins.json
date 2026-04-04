@@ -7,7 +7,8 @@
 		"PreventInventoryDropMixin",
 		"PlayerRespawnMixin",
 		"MenuClickMixin",
-		"PassiveAbilityMixin"
+		"PassiveAbilityMixin",
+		"PreventArmorRemovalMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
