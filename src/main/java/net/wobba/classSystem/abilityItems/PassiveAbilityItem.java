@@ -9,6 +9,8 @@ public class PassiveAbilityItem extends Item implements PassiveAbility {
         super(properties);
     }
 
+    public boolean isEquipped = false;
+
     @Override
     public void onTick(ServerPlayer player) {}
 

@@ -8,7 +8,6 @@ import net.wobba.classSystem.abilityItems.PassiveAbilityItem;
 
 public class PactBoon extends PassiveAbilityItem {
 
-    static boolean hasPactBoon = false;
 
     public PactBoon(Properties properties) {
         super(properties);
@@ -16,7 +15,7 @@ public class PactBoon extends PassiveAbilityItem {
 
     @Override
     public void onEquip(ServerPlayer player) {
-        hasPactBoon = true;
+        isEquipped = true;
     }
 
     @Override
@@ -24,13 +23,13 @@ public class PactBoon extends PassiveAbilityItem {
         // Remove absorption if active
         player.removeEffect(MobEffects.ABSORPTION);
 
-        hasPactBoon = false;
+        isEquipped = false;
     }
 
     public void trigger(ServerPlayer player) {
         // Only trigger if player has the pact boon item
 
-        if (!hasPactBoon) return;
+        if (!isEquipped) return;
 
         if (player.getCooldowns().isOnCooldown(new ItemStack(this))) return;
 
@@ -43,5 +42,10 @@ public class PactBoon extends PassiveAbilityItem {
         );
 
         player.getCooldowns().addCooldown(new ItemStack(this), 100);
+    }
+
+    @Override
+    public void onTick(ServerPlayer player) {
+        System.out.println("Equipped");
     }
 }

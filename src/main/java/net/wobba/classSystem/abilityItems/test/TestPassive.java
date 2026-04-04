@@ -21,11 +21,15 @@ public class TestPassive extends PassiveAbilityItem {
                 false,
                 false               // hide particles
         ));
+
+        isEquipped = true;
     }
 
     @Override
     public void onUnequip(ServerPlayer player) {
         // Remove regen when item leaves inventory
         player.removeEffect(MobEffects.REGENERATION);
+
+        isEquipped = false;
     }
 }

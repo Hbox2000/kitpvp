@@ -8,6 +8,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
+import net.wobba.classSystem.abilityItems.PassiveAbilityItem;
 
 import java.util.List;
 
@@ -33,8 +34,7 @@ public abstract class KitClass {
         player.setItemSlot(EquipmentSlot.FEET, armor[3]);
 
         // Apply offhand
-        ItemStack offhand = getOffhand();
-        player.setItemSlot(EquipmentSlot.OFFHAND, offhand);
+        player.setItemSlot(EquipmentSlot.OFFHAND, getOffhand());
 
         // Apply items
         List<ItemStack> items = getItems(player);

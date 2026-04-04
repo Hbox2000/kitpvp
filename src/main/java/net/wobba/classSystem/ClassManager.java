@@ -4,6 +4,9 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.wobba.classSystem.abilityItems.PassiveAbilityItem;
+import net.wobba.classSystem.abilityItems.warlock.PactBoon;
 import net.wobba.classSystem.playerClasses.Archer;
 
 import java.util.HashMap;
@@ -11,12 +14,6 @@ import java.util.Map;
 import java.util.UUID;
 
 public class ClassManager {
-
-    // Register all classes here.
-    static {
-        // e.g. register(new TemplateClass());
-        register(new Archer());
-    }
 
     // Temporary storage for preview data
     private static final Map<UUID, KitClass> PREVIEW_CLASSES = new HashMap<>();
@@ -30,17 +27,14 @@ public class ClassManager {
         PREVIEW_CLASSES.remove(player.getUUID());
         player.getInventory().clearContent();
 
-        // Reset all attributes to their default values
+        // Reset attributes
         AttributeSupplier defaultAttributes = ServerPlayer.createAttributes().build();
         for (AttributeInstance instance : player.getAttributes().getSyncableAttributes()) {
             try {
                 instance.setBaseValue(defaultAttributes.getBaseValue(instance.getAttribute()));
-            } catch (Exception ignored) {
-                // Some attributes may not exist in the default supplier, skip them
-            }
+            } catch (Exception ignored) {}
         }
 
-        // Heal to full after resetting max health
         player.setHealth(player.getMaxHealth());
     }
 
@@ -65,6 +59,12 @@ public class ClassManager {
     public static void setClass(ServerPlayer player, KitClass kitClass) {
         PLAYER_CLASSES.put(player.getUUID(), kitClass);
         kitClass.apply(player);
+    }
+
+    // Register all classes here.
+    static {
+        // e.g. register(new TemplateClass());
+        register(new Archer());
     }
 
     public static KitClass getClass(Player player) {

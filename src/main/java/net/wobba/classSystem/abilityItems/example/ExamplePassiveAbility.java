@@ -1,9 +1,6 @@
 package net.wobba.classSystem.abilityItems.example;
 
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ItemStack;
 import net.wobba.classSystem.abilityItems.PassiveAbilityItem;
 
 public class ExamplePassiveAbility extends PassiveAbilityItem {
@@ -15,13 +12,16 @@ public class ExamplePassiveAbility extends PassiveAbilityItem {
     }
 
     // Runs when the passive item enters the players inventory
+    // IMPORTANT: Will not work if you remove isEquiped from either of the fucntions.
     @Override
     public void onEquip(ServerPlayer player) {
+        isEquipped = true;
     }
 
     // Runs when the passive item exits the players inventory
     @Override
     public void onUnequip(ServerPlayer player) {
+        isEquipped = false;
     }
 
     // Runs every tick while the player has the item

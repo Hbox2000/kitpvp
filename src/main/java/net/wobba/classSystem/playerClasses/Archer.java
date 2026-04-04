@@ -12,6 +12,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.ItemLore;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.wobba.classSystem.KitClass;
+import net.wobba.item.ModItems;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,9 @@ public class Archer extends KitClass {
         items.add(new ItemStack(Items.ARROW, 64));
         ItemStack stack = new ItemStack(Items.CROSSBOW);
         enchantItem(stack, Enchantments.MULTISHOT, 1, player);
+
+        items.add(new ItemStack(ModItems.SUMMON_FIREBALL));
+        items.add(new ItemStack(ModItems.PACT_BOON));
         items.add(stack);
 
         return items;
