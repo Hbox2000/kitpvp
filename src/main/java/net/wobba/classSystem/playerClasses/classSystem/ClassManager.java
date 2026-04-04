@@ -1,14 +1,11 @@
-package net.wobba.classSystem;
+package net.wobba.classSystem.playerClasses.classSystem;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.wobba.classSystem.abilityItems.PassiveAbilityItem;
-import net.wobba.classSystem.abilityItems.warlock.PactBoon;
-import net.wobba.classSystem.playerClasses.Archer;
-import net.wobba.classSystem.playerClasses.Warlock;
+import net.wobba.classSystem.playerClasses.test.Archer;
+import net.wobba.classSystem.playerClasses.warlock.Warlock;
 
 import java.util.HashMap;
 import java.util.Map;

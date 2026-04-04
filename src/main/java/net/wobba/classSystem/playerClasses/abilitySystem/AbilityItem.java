@@ -1,4 +1,4 @@
-package net.wobba.classSystem.abilityItems;
+package net.wobba.classSystem.playerClasses.abilitySystem;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.wobba.classSystem.abilityItems.warlock.PactBoon;
+import net.wobba.classSystem.playerClasses.warlock.PactBoon;
 
 public abstract class AbilityItem extends Item {
 

@@ -1,10 +1,10 @@
-package net.wobba.classSystem.abilityItems.warlock;
+package net.wobba.classSystem.playerClasses.warlock;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
-import net.wobba.classSystem.abilityItems.PassiveAbilityItem;
+import net.wobba.classSystem.playerClasses.abilitySystem.PassiveAbilityItem;
 
 public class PactBoon extends PassiveAbilityItem {
 

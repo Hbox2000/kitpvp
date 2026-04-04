@@ -1,4 +1,4 @@
-package net.wobba.classSystem.abilityItems.test;
+package net.wobba.classSystem.playerClasses.test;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
@@ -6,7 +6,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.projectile.hurtingprojectile.SmallFireball;
 import net.minecraft.world.phys.Vec3;
-import net.wobba.classSystem.abilityItems.AbilityItem;
+import net.wobba.classSystem.playerClasses.abilitySystem.AbilityItem;
 
 public class SummonFireball extends AbilityItem {
     public SummonFireball(Properties properties) {

@@ -1,25 +1,19 @@
-package net.wobba.classSystem.playerClasses;
+package net.wobba.classSystem.playerClasses.warlock;
 
-import it.unimi.dsi.fastutil.objects.ReferenceSortedSets;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.ItemLore;
 import net.minecraft.world.item.component.TooltipDisplay;
-import net.minecraft.world.item.enchantment.Enchantments;
-import net.wobba.classSystem.KitClass;
+import net.wobba.classSystem.playerClasses.classSystem.KitClass;
 import net.wobba.item.ModItems;
 
-import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Warlock extends KitClass {
 

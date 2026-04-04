@@ -1,4 +1,4 @@
-package net.wobba.classSystem.abilityItems;
+package net.wobba.classSystem.playerClasses.abilitySystem;
 
 import net.minecraft.server.level.ServerPlayer;
 

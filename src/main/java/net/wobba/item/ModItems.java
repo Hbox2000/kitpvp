@@ -1,7 +1,6 @@
 package net.wobba.item;
 
 import net.minecraft.core.Registry;
-import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -11,13 +10,12 @@ import net.minecraft.util.Unit;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ToolMaterial;
 import net.wobba.Kitpvp;
-import net.wobba.classSystem.abilityItems.warlock.EldritchBlast;
-import net.wobba.classSystem.abilityItems.warlock.PowerWordKill;
-import net.wobba.classSystem.abilityItems.warlock.SummonLesserDemon;
-import net.wobba.classSystem.abilityItems.warlock.PactBoon;
-import net.wobba.classSystem.abilityItems.test.TestPassive;
-import net.wobba.classSystem.abilityItems.test.SummonFireball;
-import org.w3c.dom.ranges.Range;
+import net.wobba.classSystem.playerClasses.warlock.EldritchBlast;
+import net.wobba.classSystem.playerClasses.warlock.PowerWordKill;
+import net.wobba.classSystem.playerClasses.warlock.SummonLesserDemon;
+import net.wobba.classSystem.playerClasses.warlock.PactBoon;
+import net.wobba.classSystem.playerClasses.test.TestPassive;
+import net.wobba.classSystem.playerClasses.test.SummonFireball;
 
 import java.util.function.Function;
 
