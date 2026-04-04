@@ -5,6 +5,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.player.Player;
 import net.wobba.classSystem.playerClasses.test.Archer;
+import net.wobba.classSystem.playerClasses.undying.Undying;
 import net.wobba.classSystem.playerClasses.warlock.Warlock;
 
 import java.util.HashMap;
@@ -64,6 +65,7 @@ public class ClassManager {
         // e.g. register(new TemplateClass());
         register(new Archer());
         register(new Warlock());
+        register(new Undying());
     }
 
     public static KitClass getClass(Player player) {

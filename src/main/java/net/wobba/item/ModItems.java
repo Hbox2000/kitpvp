@@ -10,6 +10,10 @@ import net.minecraft.util.Unit;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ToolMaterial;
 import net.wobba.Kitpvp;
+import net.wobba.classSystem.playerClasses.undying.Aegis;
+import net.wobba.classSystem.playerClasses.undying.Gambit;
+import net.wobba.classSystem.playerClasses.undying.Paralysis;
+import net.wobba.classSystem.playerClasses.undying.Rupture;
 import net.wobba.classSystem.playerClasses.warlock.EldritchBlast;
 import net.wobba.classSystem.playerClasses.warlock.PowerWordKill;
 import net.wobba.classSystem.playerClasses.warlock.SummonLesserDemon;
@@ -45,4 +49,12 @@ public class ModItems {
     public static final Item SUMMON_LESSER_DEMON = register("summon_lesser_demon", SummonLesserDemon::new, new Item.Properties());
     public static final Item POWER_WORD_KILL = register("power_word_kill", PowerWordKill::new, new Item.Properties());
     public static final Item RITUAL_DAGGER = register("ritual_dagger", Item::new, new Item.Properties().sword(ToolMaterial.DIAMOND, 1f, -3f).component(DataComponents.UNBREAKABLE, Unit.INSTANCE));
+
+    // Undying items
+    public static final Item AEGIS_PASSIVE = register("aegis_passive", Aegis::new, new Item.Properties());
+    public static final Item PARALYSIS = register("paralysis", Paralysis::new, new Item.Properties());
+    public static final Item RUPTURE = register("rupture", Rupture::new, new Item.Properties());
+    public static final Item GAMBIT = register("gambit", Gambit::new, new Item.Properties());
+    public static final Item SOUL_BLADE = register("soul_blade", Item::new, new Item.Properties().sword(ToolMaterial.DIAMOND, 1f, -3f).component(DataComponents.UNBREAKABLE, Unit.INSTANCE)
+    );
 }

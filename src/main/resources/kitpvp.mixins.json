@@ -8,7 +8,9 @@
 		"PlayerRespawnMixin",
 		"MenuClickMixin",
 		"PassiveAbilityMixin",
-		"PreventArmorRemovalMixin"
+		"PreventArmorRemovalMixin",
+		"characterMixins.AegisDamageMixin",
+		"characterMixins.AegisKillMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
