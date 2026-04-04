@@ -24,6 +24,11 @@ public class ExamplePassiveAbility extends PassiveAbilityItem {
     public void onUnequip(ServerPlayer player) {
     }
 
+    // Runs every tick while the player has the item
+    @Override
+    public void onTick(ServerPlayer player) {
+    }
+
     // This item is a lil more complicated to make work than the active so if you need help ask me
     // Mostly just bc there isn't much more I can add to this template to make it easier
 }
