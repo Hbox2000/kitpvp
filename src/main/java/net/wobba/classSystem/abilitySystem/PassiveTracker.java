@@ -1,4 +1,4 @@
-package net.wobba.classSystem.playerClasses.abilitySystem;
+package net.wobba.classSystem.abilitySystem;
 
 import java.util.*;
 

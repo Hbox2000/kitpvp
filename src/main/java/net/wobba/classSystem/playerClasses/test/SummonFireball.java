@@ -6,7 +6,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.projectile.hurtingprojectile.SmallFireball;
 import net.minecraft.world.phys.Vec3;
-import net.wobba.classSystem.playerClasses.abilitySystem.AbilityItem;
+import net.wobba.classSystem.abilitySystem.AbilityItem;
 
 public class SummonFireball extends AbilityItem {
     public SummonFireball(Properties properties) {

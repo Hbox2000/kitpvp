@@ -1,4 +1,4 @@
-package net.wobba.classSystem.playerClasses.classSystem;
+package net.wobba.classSystem.classManagementSystem;
 
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;

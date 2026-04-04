@@ -12,8 +12,8 @@ import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.wobba.ModMenuTypes;
-import net.wobba.classSystem.playerClasses.classSystem.ClassManager;
-import net.wobba.classSystem.playerClasses.classSystem.KitClass;
+import net.wobba.classSystem.classManagementSystem.ClassManager;
+import net.wobba.classSystem.classManagementSystem.KitClass;
 import org.jspecify.annotations.NonNull;
 
 import java.util.List;

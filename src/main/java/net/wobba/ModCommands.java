@@ -6,7 +6,7 @@ import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.SimpleMenuProvider;
-import net.wobba.classSystem.playerClasses.classSystem.ClassManager;
+import net.wobba.classSystem.classManagementSystem.ClassManager;
 import net.wobba.classSystem.gui.ClassSelectionMenu;
 
 public class ModCommands {

@@ -3,7 +3,7 @@ package net.wobba.classSystem.playerClasses.test;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.wobba.classSystem.playerClasses.abilitySystem.PassiveAbilityItem;
+import net.wobba.classSystem.abilitySystem.PassiveAbilityItem;
 
 public class TestPassive extends PassiveAbilityItem {
 

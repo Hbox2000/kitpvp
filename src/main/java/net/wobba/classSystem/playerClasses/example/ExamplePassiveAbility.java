@@ -1,7 +1,7 @@
 package net.wobba.classSystem.playerClasses.example;
 
 import net.minecraft.server.level.ServerPlayer;
-import net.wobba.classSystem.playerClasses.abilitySystem.PassiveAbilityItem;
+import net.wobba.classSystem.abilitySystem.PassiveAbilityItem;
 
 public class ExamplePassiveAbility extends PassiveAbilityItem {
 

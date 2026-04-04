@@ -2,8 +2,8 @@ package net.wobba.mixin;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
-import net.wobba.classSystem.playerClasses.abilitySystem.PassiveAbilityItem;
-import net.wobba.classSystem.playerClasses.abilitySystem.PassiveTracker;
+import net.wobba.classSystem.abilitySystem.PassiveAbilityItem;
+import net.wobba.classSystem.abilitySystem.PassiveTracker;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

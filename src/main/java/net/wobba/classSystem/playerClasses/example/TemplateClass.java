@@ -9,7 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.ItemLore;
-import net.wobba.classSystem.playerClasses.classSystem.KitClass;
+import net.wobba.classSystem.classManagementSystem.KitClass;
 
 import java.util.ArrayList;
 import java.util.List;

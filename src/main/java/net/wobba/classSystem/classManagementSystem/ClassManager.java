@@ -1,4 +1,4 @@
-package net.wobba.classSystem.playerClasses.classSystem;
+package net.wobba.classSystem.classManagementSystem;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;

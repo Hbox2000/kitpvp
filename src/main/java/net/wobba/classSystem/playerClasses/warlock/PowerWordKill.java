@@ -7,7 +7,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import net.wobba.classSystem.playerClasses.abilitySystem.AbilityItem;
+import net.wobba.classSystem.abilitySystem.AbilityItem;
 
 import java.util.Optional;
 

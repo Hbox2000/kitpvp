@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.ItemLore;
 import net.minecraft.world.item.component.TooltipDisplay;
-import net.wobba.classSystem.playerClasses.classSystem.KitClass;
+import net.wobba.classSystem.classManagementSystem.KitClass;
 import net.wobba.item.ModItems;
 
 import java.util.ArrayList;
