@@ -33,8 +33,8 @@ public abstract class AbilityItem extends Item {
 
         if (used) {
             serverPlayer.getCooldowns().addCooldown(new ItemStack(this), cooldownTicks);
-            // Trigger pact boon passive
 
+            // Trigger pact boon passive
             for (int i = 0; i < player.getInventory().getContainerSize(); i++) {
                 if (player.getInventory().getItem(i).getItem() instanceof PactBoon pactItem) {
 
